@@ -14,12 +14,15 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-border bg-nav-bg backdrop-blur-md">
-      <div className="mx-auto max-w-5xl px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="text-lg font-bold tracking-tight text-foreground">
-          jabreeflor
+    <nav className="sticky top-0 z-50 border-b border-border bg-nav-bg backdrop-blur-lg">
+      <div className="mx-auto max-w-5xl px-6 h-14 flex items-center justify-between">
+        <Link
+          href="/"
+          className="font-display text-xl italic tracking-tight text-foreground hover:text-accent transition-colors"
+        >
+          jf
         </Link>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-0.5">
           {links.map(({ href, label }) => {
             const isActive =
               href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -27,17 +30,20 @@ export function Navbar() {
               <Link
                 key={href}
                 href={href}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                className={`relative px-3 py-1.5 text-[13px] tracking-wide uppercase transition-colors ${
                   isActive
-                    ? "text-accent"
+                    ? "text-foreground"
                     : "text-muted hover:text-foreground"
                 }`}
               >
                 {label}
+                {isActive && (
+                  <span className="absolute bottom-0 left-3 right-3 h-px bg-accent" />
+                )}
               </Link>
             );
           })}
-          <div className="ml-2">
+          <div className="ml-3 pl-3 border-l border-border">
             <ThemeToggle />
           </div>
         </div>

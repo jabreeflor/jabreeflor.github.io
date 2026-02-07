@@ -36,19 +36,19 @@ export default async function BlogPostPage({
   if (!post) notFound();
 
   return (
-    <article className="py-16">
+    <article className="py-20">
       <Link
         href="/blog"
-        className="text-sm text-muted hover:text-foreground transition-colors"
+        className="group inline-flex items-center gap-1.5 text-[13px] tracking-wide text-muted hover:text-foreground transition-colors"
       >
-        &larr; Back to blog
+        <svg className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+        </svg>
+        Back to blog
       </Link>
 
-      <header className="mt-8 mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold text-foreground">
-          {post.title}
-        </h1>
-        <div className="mt-4 flex items-center gap-3 text-sm text-muted">
+      <header className="mt-10 mb-12 pb-10 border-b border-border">
+        <div className="flex items-center gap-3 text-[13px] tracking-wide text-muted mb-4">
           <time dateTime={post.date}>
             {new Date(post.date).toLocaleDateString("en-US", {
               year: "numeric",
@@ -56,11 +56,14 @@ export default async function BlogPostPage({
               day: "numeric",
             })}
           </time>
-          <span>&middot;</span>
+          <span className="text-border">/</span>
           <span>{post.readingTime}</span>
         </div>
+        <h1 className="font-display text-4xl sm:text-5xl italic text-foreground leading-tight">
+          {post.title}
+        </h1>
         {post.tags.length > 0 && (
-          <div className="mt-4 flex flex-wrap gap-1.5">
+          <div className="mt-6 flex flex-wrap gap-1.5">
             {post.tags.map((tag) => (
               <TechBadge key={tag} label={tag} />
             ))}
