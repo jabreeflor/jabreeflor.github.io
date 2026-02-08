@@ -2,6 +2,14 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    name: "git-wrapped",
+    description:
+      "Your Spotify Wrapped, but for GitHub commits! Generate beautiful year-in-review summaries with commit stats, streaks, languages, and developer personality analysis.",
+    url: "https://github.com/jabreeflor/git-wrapped",
+    tech: ["TypeScript", "GitHub API", "Chalk", "CLI"],
+    featured: true,
+  },
+  {
     name: "release-notes-ai",
     description:
       "Generate beautiful changelogs from git commits using AI. Smart categorization, conventional commits support, and optional Claude/GPT enhancement.",
