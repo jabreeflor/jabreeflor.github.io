@@ -2,6 +2,14 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    name: "repo-swipe",
+    description:
+      "Tinder for GitHub repos — discover awesome projects one swipe at a time! A terminal UI that lets you like, skip, and curate repos with keyboard controls.",
+    url: "https://github.com/jabreeflor/repo-swipe",
+    tech: ["TypeScript", "Ink", "GitHub API", "React"],
+    featured: true,
+  },
+  {
     name: "OSINT CLI",
     description:
       "Open-source intelligence gathering CLI. Username enumeration across 97+ platforms, email breach checks, domain WHOIS, reverse image search, and more.",
