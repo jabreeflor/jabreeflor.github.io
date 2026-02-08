@@ -2,6 +2,14 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    name: "release-notes-ai",
+    description:
+      "Generate beautiful changelogs from git commits using AI. Smart categorization, conventional commits support, and optional Claude/GPT enhancement.",
+    url: "https://github.com/jabreeflor/release-notes-ai",
+    tech: ["TypeScript", "Node.js", "Claude API", "OpenAI"],
+    featured: true,
+  },
+  {
     name: "repo-swipe",
     description:
       "Tinder for GitHub repos — discover awesome projects one swipe at a time! A terminal UI that lets you like, skip, and curate repos with keyboard controls.",
