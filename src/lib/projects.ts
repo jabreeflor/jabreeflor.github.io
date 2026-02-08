@@ -2,6 +2,38 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    name: "OSINT CLI",
+    description:
+      "Open-source intelligence gathering CLI. Username enumeration across 97+ platforms, email breach checks, domain WHOIS, reverse image search, and more.",
+    url: "https://github.com/jabreeflor/osint-cli",
+    tech: ["TypeScript", "Node.js", "Puppeteer", "Commander.js"],
+    featured: true,
+  },
+  {
+    name: "Claude Orchestrator",
+    description:
+      "A Clawdbot plugin demonstrating advanced Claude Code patterns: sub-agents, agent teams, skills, and multi-agent coordination workflows.",
+    url: "https://github.com/jabreeflor/claude-orchestrator",
+    tech: ["TypeScript", "Claude Code", "Agent Teams"],
+    featured: true,
+  },
+  {
+    name: "Spotify Playlist Generator",
+    description:
+      "AI-powered playlist generator that analyzes your Spotify listening history, builds a taste profile, and creates personalized playlists by mood, activity, or vibe.",
+    url: "https://github.com/jabreeflor/spotify-playlist-gen",
+    tech: ["TypeScript", "Spotify API", "OAuth2"],
+    featured: true,
+  },
+  {
+    name: "Claude Memory",
+    description:
+      "Standalone memory management system for Claude Code and coding agents. Semantic search, daily logs, long-term memory, and maintenance tools.",
+    url: "https://github.com/jabreeflor/claude-memory",
+    tech: ["TypeScript", "Embeddings", "Semantic Search"],
+    featured: true,
+  },
+  {
     name: "Internet Archaeology",
     description:
       "Explore the history of any website through the Wayback Machine. View snapshots, compare changes over time, and discover how the web has evolved.",
