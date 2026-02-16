@@ -10,8 +10,8 @@ export function Hero() {
       </div>
 
       <div className="animate-fade-up stagger-2">
-        <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl tracking-tight text-foreground leading-[0.9]">
-          Jabree <span className="gradient-text italic">Flor</span>
+        <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl tracking-tight text-foreground leading-[0.95] font-bold">
+          Jabree <span className="gradient-text">Flor</span>
         </h1>
       </div>
 

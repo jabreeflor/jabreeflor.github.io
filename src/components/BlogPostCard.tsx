@@ -14,7 +14,7 @@ export function BlogPostCard({ post }: { post: BlogPost }) {
         <span>{post.readingTime}</span>
       </div>
 
-      <h3 className="mt-2.5 font-display text-xl italic text-foreground group-hover:text-accent transition-colors">
+      <h3 className="mt-2.5 font-display text-xl font-semibold text-foreground group-hover:text-accent transition-colors">
         {post.title}
       </h3>
 

@@ -13,7 +13,7 @@ export function ProjectCard({ project }: { project: Project }) {
       <div className="absolute top-0 left-4 right-4 h-px bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
 
       <div className="flex items-start justify-between gap-4">
-        <h3 className="font-display text-lg italic text-foreground group-hover:text-accent transition-colors">
+        <h3 className="font-display text-lg font-semibold text-foreground group-hover:text-accent transition-colors">
           {project.name}
         </h3>
         <svg className="w-4 h-4 mt-1 text-muted opacity-0 -translate-y-0.5 translate-x-0.5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>

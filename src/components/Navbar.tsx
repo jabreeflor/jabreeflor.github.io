@@ -18,9 +18,9 @@ export function Navbar() {
       <div className="mx-auto max-w-5xl px-6 h-14 flex items-center justify-between">
         <Link
           href="/"
-          className="font-display text-xl italic tracking-tight text-foreground hover:text-accent transition-colors"
+          className="font-display text-xl font-bold tracking-tight text-foreground hover:text-accent transition-colors"
         >
-          jf
+          JF
         </Link>
         <div className="flex items-center gap-0.5">
           {links.map(({ href, label }) => {
