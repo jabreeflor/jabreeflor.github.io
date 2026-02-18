@@ -19,14 +19,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    name: "Philly Lead Gen",
-    description:
-      "Automated business lead generation for web design clients. Scrapes Google Maps for businesses without websites, tracks leads, avoids duplicates.",
-    url: "https://github.com/jabreeflor/philly-lead-gen",
-    tech: ["TypeScript", "Puppeteer", "Automation"],
-    featured: true,
-  },
-  {
     name: "Prediction Market Trader",
     description:
       "Automated trading bot for prediction markets. Analyzes odds, tracks positions, and executes trades based on configurable strategies.",
@@ -35,27 +27,11 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    name: "Sunset Setup",
-    description:
-      "Personal AI assistant setup using Clawdbot. Complete configuration for running your own AI assistant with memory, skills, and multi-channel messaging.",
-    url: "https://github.com/jabreeflor/sunset-setup",
-    tech: ["TypeScript", "Clawdbot", "AI Agents"],
-    featured: true,
-  },
-  {
     name: "Claude Face",
     description:
       "Pixel art avatar that animates based on Claude Code activity. Shows thinking, typing, and idle states with retro pixel aesthetics.",
     url: "https://github.com/jabreeflor/claude-face",
     tech: ["TypeScript", "Canvas", "Pixel Art"],
-    featured: true,
-  },
-  {
-    name: "GhostHud",
-    description:
-      "Stealth gaming assistant with an Electron overlay. OCR screen reading, local AI integration, and undetectable overlay for competitive gaming.",
-    url: "https://github.com/jabreeflor/GhostHud",
-    tech: ["Electron", "TypeScript", "OCR", "AI"],
     featured: true,
   },
   // === ESTABLISHED PROJECTS ===
