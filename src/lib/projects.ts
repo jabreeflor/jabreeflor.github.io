@@ -1,6 +1,64 @@
 import { Project } from "@/types";
 
 export const projects: Project[] = [
+  // === NEWEST PROJECTS ===
+  {
+    name: "Ultra Bangers Plugins",
+    description:
+      "🔥 Collection of powerful Claude Code plugins for enhanced AI-assisted development. Workflow automation, code generation, and productivity boosters.",
+    url: "https://github.com/jabreeflor/ultra-bangers-plugins",
+    tech: ["TypeScript", "Claude Code", "Plugins"],
+    featured: true,
+  },
+  {
+    name: "Biz Templates",
+    description:
+      "Template generator for local business websites. 8 niche templates (salon, auto shop, landscaper, etc.) — generated 58 live sites from Philadelphia leads database.",
+    url: "https://github.com/jabreeflor/biz-templates",
+    tech: ["TypeScript", "Next.js", "Tailwind", "Lead Gen"],
+    featured: true,
+  },
+  {
+    name: "Philly Lead Gen",
+    description:
+      "Automated business lead generation for web design clients. Scrapes Google Maps for businesses without websites, tracks leads, avoids duplicates.",
+    url: "https://github.com/jabreeflor/philly-lead-gen",
+    tech: ["TypeScript", "Puppeteer", "Automation"],
+    featured: true,
+  },
+  {
+    name: "Prediction Market Trader",
+    description:
+      "Automated trading bot for prediction markets. Analyzes odds, tracks positions, and executes trades based on configurable strategies.",
+    url: "https://github.com/jabreeflor/prediction-market-trader",
+    tech: ["TypeScript", "Trading", "Automation"],
+    featured: true,
+  },
+  {
+    name: "Sunset Setup",
+    description:
+      "Personal AI assistant setup using Clawdbot. Complete configuration for running your own AI assistant with memory, skills, and multi-channel messaging.",
+    url: "https://github.com/jabreeflor/sunset-setup",
+    tech: ["TypeScript", "Clawdbot", "AI Agents"],
+    featured: true,
+  },
+  {
+    name: "Claude Face",
+    description:
+      "Pixel art avatar that animates based on Claude Code activity. Shows thinking, typing, and idle states with retro pixel aesthetics.",
+    url: "https://github.com/jabreeflor/claude-face",
+    tech: ["TypeScript", "Canvas", "Pixel Art"],
+    featured: true,
+  },
+  {
+    name: "GhostHud",
+    description:
+      "Stealth gaming assistant with an Electron overlay. OCR screen reading, local AI integration, and undetectable overlay for competitive gaming.",
+    url: "https://github.com/jabreeflor/GhostHud",
+    tech: ["Electron", "TypeScript", "OCR", "AI"],
+    featured: true,
+  },
+  // === ESTABLISHED PROJECTS ===
   {
     name: "git-wrapped",
     description:
@@ -66,19 +124,11 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    name: "NVM GUI",
+    name: "Prism",
     description:
-      "A desktop GUI for Node Version Manager. Install, switch, and manage Node.js versions without touching the terminal.",
-    url: "https://github.com/jabreeflor/nvm-gui",
-    tech: ["Electron", "TypeScript", "React"],
-    featured: true,
-  },
-  {
-    name: "VSCode Achievements",
-    description:
-      "A VS Code extension that gamifies your coding experience with unlockable achievements, progress tracking, and milestone rewards.",
-    url: "https://github.com/jabreeflor/vscode-achievements",
-    tech: ["TypeScript", "VS Code API"],
+      "An MCP server for code intelligence. Provides semantic code search, analysis, and navigation capabilities for AI-powered development tools.",
+    url: "https://github.com/jabreeflor/prism",
+    tech: ["TypeScript", "MCP", "Tree-sitter"],
     featured: true,
   },
   {
@@ -90,12 +140,28 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    name: "Prism",
+    name: "NVM GUI",
     description:
-      "An MCP server for code intelligence. Provides semantic code search, analysis, and navigation capabilities for AI-powered development tools.",
-    url: "https://github.com/jabreeflor/prism",
-    tech: ["TypeScript", "MCP", "Tree-sitter"],
-    featured: true,
+      "A desktop GUI for Node Version Manager. Install, switch, and manage Node.js versions without touching the terminal.",
+    url: "https://github.com/jabreeflor/nvm-gui",
+    tech: ["Electron", "TypeScript", "React"],
+    featured: false,
+  },
+  {
+    name: "VSCode Achievements",
+    description:
+      "A VS Code extension that gamifies your coding experience with unlockable achievements, progress tracking, and milestone rewards.",
+    url: "https://github.com/jabreeflor/vscode-achievements",
+    tech: ["TypeScript", "VS Code API"],
+    featured: false,
+  },
+  {
+    name: "Pokemon Office",
+    description:
+      "Pokemon Research Lab — pixel art animated office scene with role-based dev workflows. Fun retro aesthetic meets modern development.",
+    url: "https://github.com/jabreeflor/pokemon-office",
+    tech: ["JavaScript", "Canvas", "Pixel Art"],
+    featured: false,
   },
   {
     name: "JJK Fighting Game",
